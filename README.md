@@ -37,3 +37,27 @@ import 'aos/dist/aos.css';
 import AOS from 'aos';
 
 AOS.init();
+
+
+1- Installer GitHub Pages
+npm install gh-pages --save-dev
+
+2- Modifier package.json
+"homepage": "https://samamrani.github.io/WebCraft",
+"scripts": {
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build"
+}
+
+3️- Initialiser et pousser vers GitHub
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+git remote add origin https://github.com/samamrani/WebCraft.git
+git push -u origin main
+
+4-  Déployer 
+npm run deploy
+
+
