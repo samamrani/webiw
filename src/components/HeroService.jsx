@@ -1,0 +1,51 @@
+import React from "react";
+import "aos/dist/aos.css";
+
+function HeroService() {
+  const services = [
+    {
+      title: "Sites Web",
+      desc: "Création de sites modernes, rapides et adaptés à tous les écrans.",
+      icon: "bi bi-laptop",
+    },
+    {
+      title: "Applications Web",
+      desc: "Développement sur mesure d'applications performantes et sécurisées.",
+      icon: "bi bi-code-slash",
+    },
+    {
+      title: "Identité Visuelle",
+      desc: "Design graphique et branding pour renforcer votre image de marque.",
+      icon: "bi bi-palette",
+    },
+  ];
+
+  return (
+    <>
+      <section className="py-5">
+        <div className="container">
+          <div className="row g-4 justify-content-center">
+            {services.map((service, i) => (
+              <div
+                key={i}
+                className="col-md-4 col-sm-6"
+                data-aos="zoom-in"
+                data-aos-delay={i * 150}
+              >
+                <div className="card border-0 shadow-lg h-100 text-center p-4 hover-card">
+                  <div className="icon mb-3 text-primary fs-1">
+                    <i className={service.icon}></i>
+                  </div>
+                  <h5 className="fw-bold mb-3">{service.title}</h5>
+                  <p className="text-muted">{service.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default HeroService;
