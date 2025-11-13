@@ -1,84 +1,85 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import teamImage from "../Images/photo.jpg"; 
+import "../Styles/Apropos.css";
 
 function Apropos() {
   const valeurs = [
-    { icon: "bi-lightning-fill", label: "Innovation" },
-    { icon: "bi-award-fill", label: "Qualité" },
-    { icon: "bi-palette-fill", label: "Créativité" },
-    { icon: "bi-emoji-smile-fill", label: "Satisfaction client" },
-  ];
-
-  const services = [
-    {
-      title: "Sites Web",
-      desc: "Création de sites modernes et responsives, adaptés à tous les écrans.",
-    },
-    {
-      title: "Applications Web",
-      desc: "Développement sur mesure d'applications web performantes et sécurisées.",
-    },
-    {
-      title: "Identité Visuelle",
-      desc: "Design graphique et branding pour renforcer votre image de marque.",
-    },
+    { icon: "bi-lightning-charge-fill", title: "Innovation", desc: "Toujours à la pointe des technologies modernes." },
+    { icon: "bi-award-fill", title: "Qualité", desc: "Des projets soignés, durables et performants." },
+    { icon: "bi-people-fill", title: "Collaboration", desc: "Une équipe à l’écoute, proche de vos besoins." },
+    { icon: "bi-rocket-takeoff-fill", title: "Croissance", desc: "Nous propulsons votre présence digitale vers de nouveaux sommets." },
   ];
 
   return (
-    <>
+    <div className="apropos">
       <Helmet>
-        <title>WebCraft - À propos</title>
-        <meta
-          name="description"
-          content="Découvrez les services de WebCraft, agence web spécialisée dans la création de sites, applications web et identité visuelle."
-        />
+        <title>À propos - WebCraft</title>
       </Helmet>
 
-     <section id="apropos">
-  <div className="container" data-aos="fade-up">
-    <h1 className="display-4 fw-bold mb-5">
-      À propos de <span className="text-primary">WebCraft</span>
-    </h1>
-    <p className="lead">
-      WebCraft transforme vos idées en expériences digitales uniques et performantes. <br />
-      Nous créons des sites web, applications et identités visuelles modernes et responsives.
-    </p>
-  </div>
-</section>
+      <section
+        className="text-light d-flex align-items-center"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${teamImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "60vh",
+          textAlign: "center",
+        }}
+      >
+        <div className="container" data-aos="fade-up">
+          <h1 className="display-4 fw-bold mb-3 text-primary">À propos de WebCraft</h1>
+          <p className="lead">
+            Une équipe passionnée, créative et ambitieuse.  
+            Notre mission : transformer vos idées en expériences digitales puissantes.
+          </p>
+        </div>
+      </section>
 
-
-      <div className="container py-5 mb-4">
-        <section className="mb-5 text-center">
-          <h2 className="text-secondary mb-4 fw-bold">Nos valeurs</h2>
-          <div className="row justify-content-center">
+      <section className="py-5 bg-light">
+        <div className="container text-center" data-aos="fade-up">
+          <h2 className="fw-bold text-secondary mb-5">Nos Valeurs</h2>
+          <div className="row g-4">
             {valeurs.map((v, i) => (
-              <div key={i} className="col-md-3 mb-3">
-                <div className="card h-100 border-1 shadow p-3 text-center">
+              <div className="col-md-3 col-sm-6" key={i}>
+                <div className="card border-0 shadow h-100 p-4 hover-card">
                   <i className={`bi ${v.icon} fs-1 text-primary mb-3`}></i>
-                  <h5 className="card-title">{v.label}</h5>
+                  <h5 className="fw-bold">{v.title}</h5>
+                  <p className="text-muted">{v.desc}</p>
                 </div>
               </div>
             ))}
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="text-center">
-          <h2 className="text-secondary mb-4 fw-bold">Ce que nous proposons</h2>
-          <div className="row">
-            {services.map((s, i) => (
-              <div key={i} className="col-md-4 mb-4">
-                <div className="card h-100 shadow border-1">
-                  <div className="card-body">
-                    <h5 className="card-title text-primary fw-bold">{s.title}</h5>
-                    <p className="card-text text-muted">{s.desc}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
+      <section className="py-5">
+        <div className="container" data-aos="fade-up">
+          <div className="row align-items-center">
+            <div className="col-md-6 mb-4 mb-md-0">
+              <h2 className="fw-bold text-primary mb-3">Notre mission</h2>
+              <p className="lead text-muted">
+                Chez <strong>WebCraft</strong>, nous croyons qu’un bon design et une technologie solide
+                peuvent faire grandir les entreprises.  
+                Nous accompagnons nos clients à chaque étape — de l’idée initiale à la mise en ligne.
+              </p>
+              <p className="text-muted">
+                Notre objectif est de créer des solutions sur mesure, à la fois esthétiques et performantes,
+                qui génèrent un vrai impact digital.
+              </p>
+            </div>
+            <div className="col-md-6 text-center">
+              <img
+                src={teamImage}
+                alt="Équipe WebCraft"
+                className="img-fluid rounded shadow"
+                style={{ maxHeight: "350px", objectFit: "cover" }}
+              />
+            </div>
           </div>
-        </section>
-      </div>
-    </>
+        </div>
+      </section>
+    </div>
   );
 }
 
