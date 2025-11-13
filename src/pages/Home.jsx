@@ -23,9 +23,11 @@ function Home() {
     <div>
       <Header setActiveSection={handleSectionChange} /> {/* Passe la fonction au Header */}
 
-      <main style={{ paddingTop: "100px" }}>
+   <main className="mt-5">
+
+
         {loading ? (
-          <Loading /> // Affiche le spinner
+          <Loading /> 
         ) : (
           <>
             {activeSection === "hero" && <HeroSection />}

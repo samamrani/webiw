@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../Images/logo0.png";
+import logo from "../Images/logo.png";
 
 function Header({ setActiveSection }) {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -42,7 +42,6 @@ function Header({ setActiveSection }) {
               <button className="btn nav-link text-white" onClick={() => handleClick("contact")}>Contact</button>
             </li>
 
-            {/* GitHub & LinkedIn */}
             <li className="nav-item ms-3">
               <a className="nav-link text-white" href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github fs-5"></i>

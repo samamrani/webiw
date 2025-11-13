@@ -1,8 +1,7 @@
 .hero {
-  min-height: 60vh;
-  background-size: cover;
-  background-position: center;
-  color: white;
+  min-height: 90vh;
+  margin-top: 0;
+  padding-top: 0;
   position: relative;
   display: flex;
   justify-content: center;
@@ -15,8 +14,7 @@
   max-width: 700px;
   z-index: 2;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.3); /* fond semi-transparent derrière le texte */
-  border-radius: 8px;
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
 .hero-title {

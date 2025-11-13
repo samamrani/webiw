@@ -1,6 +1,5 @@
 import React from "react";
 import "aos/dist/aos.css";
-import heroImage from "../Images/img.jpg"; // ✅ ton image locale
 
 
 function Services() {
