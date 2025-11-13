@@ -1,7 +1,5 @@
 import React from "react";
-import "../Styles/Apropos.css";
 import { Helmet } from "react-helmet";
-import heroImage from "../Images/img.jpg"; 
 
 function Apropos() {
   const valeurs = [
@@ -36,25 +34,18 @@ function Apropos() {
         />
       </Helmet>
 
-      <section
-         className="hero text-light d-flex align-items-center text-center"
-  style={{
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
-       
-      >
-        <div className="container" data-aos="fade-up">
-          <h1 className="display-4 fw-bold mb-5">
-            À propos de <span className="text-primary">WebCraft</span>
-          </h1>
-          <p className="lead">
-            WebCraft transforme vos idées en expériences digitales uniques et performantes. <br />
-            Nous créons des sites web, applications et identités visuelles modernes et responsives.
-          </p>
-        </div>
-      </section>
+     <section id="apropos">
+  <div className="container" data-aos="fade-up">
+    <h1 className="display-4 fw-bold mb-5">
+      À propos de <span className="text-primary">WebCraft</span>
+    </h1>
+    <p className="lead">
+      WebCraft transforme vos idées en expériences digitales uniques et performantes. <br />
+      Nous créons des sites web, applications et identités visuelles modernes et responsives.
+    </p>
+  </div>
+</section>
+
 
       <div className="container py-5 mb-4">
         <section className="mb-5 text-center">

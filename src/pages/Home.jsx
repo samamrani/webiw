@@ -1,27 +1,41 @@
-import React from "react";
-import HeroSection from '../components/HeroSection';
-import HeroService from '../components/HeroService';
-import Contact from '../pages/Contact';
-  import { Helmet } from "react-helmet";
+import React, { useState } from "react";
+import Header from "../components/Header";
+import HeroSection from "../components/HeroSection";
+import Apropos from "../components/Apropos";
+import Services from "../components/Services";
+import Contact from "../components/Contact";
+import Loading from "../components/Loading"; // Ton spinner
 
 function Home() {
-  return (
-    <>
-    <Helmet>
-        <title>WebCraft - Accueil</title>
-        <meta
-          name="description"
-          content="Découvrez les services de WebCraft, agence web spécialisée dans la création de sites, applications web et identité visuelle."
-        />
-    </Helmet>
+  const [activeSection, setActiveSection] = useState("hero");
+  const [loading, setLoading] = useState(false);
 
-      <HeroSection />
-        <div className="d-flex flex-column align-items-center justify-content-center text-center text-primary">
-          <h1 className="fw-bold m-3" data-aos="fade-up">Nos Services</h1>
-            <HeroService />
-        </div>
-      <Contact />
-    </>
+  // Fonction pour changer de section avec le spinner
+  const handleSectionChange = (section) => {
+    setLoading(true); // Affiche le spinner
+    setTimeout(() => {
+      setActiveSection(section); // Change la section
+      setLoading(false); // Cache le spinner
+    }, 500); // Durée du spinner en ms (ajustable)
+  };
+
+  return (
+    <div>
+      <Header setActiveSection={handleSectionChange} /> {/* Passe la fonction au Header */}
+
+      <main style={{ paddingTop: "100px" }}>
+        {loading ? (
+          <Loading /> // Affiche le spinner
+        ) : (
+          <>
+            {activeSection === "hero" && <HeroSection />}
+            {activeSection === "apropos" && <Apropos />}
+            {activeSection === "services" && <Services />}
+            {activeSection === "contact" && <Contact />}
+          </>
+        )}
+      </main>
+    </div>
   );
 }
 

@@ -2,16 +2,16 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/HeroSection.css";
 import heroImage from "../Images/img.jpg"; 
-import { Link } from "react-router-dom";
+
 
 function HeroSection() {
   return (
     <section
-  className="hero text-light d-flex align-items-center"
-  style={{
-    backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center",
+      className="hero text-light d-flex align-items-center"
+      style={{
+      backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
+      backgroundSize: "cover",
+      backgroundPosition: "center",
   }}
 >
   <div className="container text-center" data-aos="fade-up">
@@ -23,9 +23,10 @@ function HeroSection() {
       Nous transformons vos idées en expériences digitales modernes.
     </p>
 
-    <Link to="/contact" className="btn btn-primary btn-lg rounded-pill px-4">
-      Nous contacter
-    </Link>
+   <a href="#contact" className="btn btn-primary btn-lg rounded-pill px-4">
+  Nous contacter
+</a>
+
   </div>
 
   <svg
