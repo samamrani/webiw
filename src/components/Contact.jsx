@@ -13,7 +13,7 @@
           />
         </Helmet>
 
-      <section className="top"> 
+      <section className="top" id="contact"> 
         <div className="container text-center" data-aos="fade-up">
           <h1 className="display-6 fw-bold mb-2 text-primary">Nous Contacter</h1>
         </div> 

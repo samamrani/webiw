@@ -30,7 +30,7 @@ function Home() {
           <Loading /> 
         ) : (
           <>
-            {activeSection === "hero" && <HeroSection />}
+            {activeSection === "hero" && <HeroSection setActiveSection={handleSectionChange}/>}
             {activeSection === "apropos" && <Apropos />}
             {activeSection === "services" && <Services />}
             {activeSection === "contact" && <Contact />}
