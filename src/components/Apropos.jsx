@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import teamImage from "../Images/photo.jpg"; 
-import "../Styles/Apropos.css";
+import teamImage from "../Images/img.png";
+import team from "../Images/img.jpg";
 
 function Apropos() {
   const valeurs = [
@@ -12,7 +12,7 @@ function Apropos() {
   ];
 
   return (
-    <div className="apropos">
+    <>
       <Helmet>
         <title>À propos - WebCraft</title>
       </Helmet>
@@ -20,7 +20,7 @@ function Apropos() {
       <section
         className="text-light d-flex align-items-center"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${teamImage})`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${team})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "60vh",
@@ -52,7 +52,7 @@ function Apropos() {
           </div>
         </div>
       </section>
-
+      
       <section className="py-5">
         <div className="container" data-aos="fade-up">
           <div className="row align-items-center">
@@ -79,7 +79,7 @@ function Apropos() {
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 }
 

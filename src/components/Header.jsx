@@ -43,12 +43,12 @@ function Header({ setActiveSection }) {
             </li>
 
             <li className="nav-item ms-3">
-              <a className="nav-link text-white" href="https://github.com/ton-profil" target="_blank" rel="noopener noreferrer">
+              <a className="nav-link text-white" href="https://github.com/samamrani/WebCraft/" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-github fs-5"></i>
               </a>
             </li>
             <li className="nav-item ms-2">
-              <a className="nav-link text-white" href="https://www.linkedin.com/in/ton-profil" target="_blank" rel="noopener noreferrer">
+              <a className="nav-link text-white" href="https://www.linkedin.com/in/samira-amrani" target="_blank" rel="noopener noreferrer">
                 <i className="bi bi-linkedin fs-5"></i>
               </a>
             </li>

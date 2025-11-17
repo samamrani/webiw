@@ -4,7 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Apropos from "../components/Apropos";
 import Services from "../components/Services";
 import Contact from "../components/Contact";
-import Loading from "../components/Loading"; // Ton spinner
+import Loading from "../components/Loading"; //spinner
 
 function Home() {
   const [activeSection, setActiveSection] = useState("hero");

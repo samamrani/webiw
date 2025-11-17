@@ -1,6 +1,6 @@
 import React from "react";
 import "aos/dist/aos.css";
-
+import heroImage from "../Images/img.jpg";
 
 function Services() {
   const services = [
@@ -23,8 +23,17 @@ function Services() {
 
   return (
     <>
+     
       <section
-       
+        className="hero text-light d-flex align-items-center justify-content-center text-center text-primary"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${heroImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "40vh",
+          paddingTop: "180px",
+          paddingBottom: "1rem",
+        }}
       >
         <div className="container" data-aos="fade-up">
           <h1 className="display-4 fw-bold mb-3 text-primary">Nos Services</h1>
@@ -35,7 +44,7 @@ function Services() {
         </div>
       </section>
 
-       <section className="py-5">
+      <section className="py-5">
         <div className="container">
           <div className="row g-4 justify-content-center">
             {services.map((service, i) => (
