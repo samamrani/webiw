@@ -1,8 +1,7 @@
-body {
-  font-family: 'Roboto', sans-serif;
+body, html, #root {
+  background-color: #000;   /* fond noir */
+  color: #fff;              /* texte blanc */
   margin: 0;
   padding: 0;
-}
-html {
-  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
 }

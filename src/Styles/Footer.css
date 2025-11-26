@@ -1,10 +1,27 @@
-
-.fixFooter {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
-
+.footer-link {
   
+  border: none;
+  padding: 6px 12px;
+  font-size: 16px;
+  color: white;
+  background: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-link:hover {
+  background: white;
+  color: black;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  color: #bbb;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: white;
+  transform: scale(1.1);
 }

@@ -36,10 +36,10 @@ function Services() {
         }}
       >
         <div className="container" data-aos="fade-up">
-          <h1 className="display-4 fw-bold mb-3 text-primary">Nos Services</h1>
+          <h1 className="display-3 fw-bold text-primary">Nos Services</h1>
           <p className="lead">
-            Découvrez comment nous donnons vie à vos projets numériques avec
-            passion, créativité et expertise.
+            Découvrez comment nous donnons vie à vos <br />projets numériques avec
+            passion, <br />créativité et expertise.
           </p>
         </div>
       </section>

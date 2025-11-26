@@ -2,6 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../Styles/HeroSection.css";
 import heroImage from "../Images/img.jpg";
+import logo from "../Images/logo1.png";
 
 function HeroSection({ setActiveSection }) {
   return (
@@ -15,7 +16,8 @@ function HeroSection({ setActiveSection }) {
     >
       <div className="container text-center" data-aos="fade-up">
         <h1 className="fw-bold mb-3 hero-title">
-          Bienvenue chez <span className="text-primary">WebCraft</span>
+          Bienvenue chez  <strong className="text-primary">WEB</strong> <strong className="text-danger">IW</strong> 
+
         </h1>
 
         <p className="lead mb-4 hero-text">
@@ -24,7 +26,7 @@ function HeroSection({ setActiveSection }) {
 
         <button 
           onClick={() => setActiveSection("contact")}
-          className="btn btn-primary btn-lg rounded-pill px-4"
+          className="btn btn-danger btn-lg rounded-pill px-4 mt-5"
         >
           Nous contacter
         </button>

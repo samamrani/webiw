@@ -1,6 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-import teamImage from "../Images/img.png";
+import teamImage from "../Images/logo.png";
 import team from "../Images/img.jpg";
 
 function Apropos() {
@@ -14,7 +14,7 @@ function Apropos() {
   return (
     <>
       <Helmet>
-        <title>À propos - WebCraft</title>
+        <title>À propos - WEBIW</title>
       </Helmet>
 
       <section
@@ -28,17 +28,17 @@ function Apropos() {
         }}
       >
         <div className="container" data-aos="fade-up">
-          <h1 className="display-4 fw-bold mb-3 text-primary">À propos de WebCraft</h1>
-          <p className="lead">
-            Une équipe passionnée, créative et ambitieuse.  
-            Notre mission : transformer vos idées en expériences digitales puissantes.
+          <h1 className="display-4 fw-bold mb-3 ">À propos de  <strong className="text-primary">WEB</strong> <strong className="text-danger">IW</strong></h1>
+          <p className="lead mt-5">
+            Une équipe passionnée, créative et ambitieuse.  <br />
+            Notre mission : transformer vos idées en <br />expériences digitales puissantes.
           </p>
         </div>
       </section>
 
-      <section className="py-5 bg-light">
+      <section className="py-5">
         <div className="container text-center" data-aos="fade-up">
-          <h2 className="fw-bold text-secondary mb-5">Nos Valeurs</h2>
+          <h2 className="fw-bold text-primary mb-5">Nos Valeurs</h2>
           <div className="row g-4">
             {valeurs.map((v, i) => (
               <div className="col-md-3 col-sm-6" key={i}>
@@ -57,13 +57,13 @@ function Apropos() {
         <div className="container" data-aos="fade-up">
           <div className="row align-items-center">
             <div className="col-md-6 mb-4 mb-md-0">
-              <h2 className="fw-bold text-primary mb-3">Notre mission</h2>
-              <p className="lead text-muted">
+              <h2 className="fw-bold mb-3 text-primary">Notre mission</h2>
+              <p className="lead text-whit">
                 Chez <strong>WebCraft</strong>, nous croyons qu’un bon design et une technologie solide
                 peuvent faire grandir les entreprises.  
                 Nous accompagnons nos clients à chaque étape — de l’idée initiale à la mise en ligne.
               </p>
-              <p className="text-muted">
+              <p className="text-whit">
                 Notre objectif est de créer des solutions sur mesure, à la fois esthétiques et performantes,
                 qui génèrent un vrai impact digital.
               </p>
