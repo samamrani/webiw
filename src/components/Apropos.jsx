@@ -59,7 +59,7 @@ function Apropos() {
             <div className="col-md-6 mb-4 mb-md-0">
               <h2 className="fw-bold mb-3 text-primary">Notre mission</h2>
               <p className="lead text-whit">
-                Chez <strong>WebCraft</strong>, nous croyons qu’un bon design et une technologie solide
+                Chez <strong>WEBIW</strong>, nous croyons qu’un bon design et une technologie solide
                 peuvent faire grandir les entreprises.  
                 Nous accompagnons nos clients à chaque étape — de l’idée initiale à la mise en ligne.
               </p>
