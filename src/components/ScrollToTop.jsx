@@ -1,4 +1,4 @@
-// src/components/ScrollToTop.jsx
+
 import React from "react";
 import { BiArrowToTop } from "react-icons/bi"; // flèche depuis react-icons
 import "../Styles/ScrollToTop.css";

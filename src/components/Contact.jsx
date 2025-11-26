@@ -1,19 +1,19 @@
-import React, { useState } from "react"; // ajoute useState ici
+import React, { useState } from "react";
 import { Helmet } from "react-helmet";
 import "../Styles/Contact.css"
 import emailjs from "emailjs-com";
 
 function Contact() {
-  // ✅ Ici : au début de ton composant
+  // au début composant
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
   emailjs.sendForm(
-    "SERVICE_ID",   // ton Service ID EmailJS
-    "TEMPLATE_ID",  // ton Template ID EmailJS
+    "SERVICE_ID",   // ID EmailJS
+    "TEMPLATE_ID",  //ID EmailJS
     e.target,
-    "USER_ID"       // ton User ID EmailJS
+    "USER_ID"       // User ID EmailJS
   ).then(
     (result) => {
       console.log(result.text);

@@ -21,7 +21,7 @@ function Home() {
 
   return (
     <div>
-      <Header setActiveSection={handleSectionChange} /> {/* Passe la fonction au Header */}
+      <Header setActiveSection={handleSectionChange} /> 
 
    <main className="mt-5">
 
