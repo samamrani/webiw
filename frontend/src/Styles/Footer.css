@@ -1,5 +1,11 @@
+.footer {
+  background-color: #0b2545;
+  color: #fff;
+  padding: 0; 
+  text-align: center;
+}
+
 .footer-link {
-  
   border: none;
   padding: 6px 12px;
   font-size: 16px;
@@ -10,7 +16,7 @@
 }
 
 .footer-link:hover {
-  background: white;
+  background: darkred;
   color: black;
   transform: translateY(-2px);
 }

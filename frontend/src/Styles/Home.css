@@ -1,0 +1,28 @@
+.hero-section {
+  min-height: 100vh; 
+  background-color: #fff; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  background-color: #19304f;
+}
+
+.hero-logo {
+  max-width: 160px;
+  margin-bottom: 40px;
+  animation: fadeIn 1s ease;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

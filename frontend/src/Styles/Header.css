@@ -1,0 +1,53 @@
+.logo{ 
+    width:80px
+}
+.navbar-custom {
+  background-color: #0b2545;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+
+}
+.navbar{
+    color: white;
+}
+.nav-link {
+  color: white;
+  font-weight: 500;
+  position: relative;
+  margin-left: 15px;
+  transition: color 0.2s ease;
+}
+.fr{
+    color: white
+}
+
+.lang-switch .kab {
+  display: none;
+ color: blue;
+}
+
+.lang-switch .fr {
+  display: inline;
+ 
+}
+
+.lang-switch:hover .fr {
+  display: none;
+}
+
+.lang-switch:hover .kab {
+  display: inline;
+}
+.nav-link::after {
+  content: "";
+  position:absolute;
+  left: 0;
+
+  width: 0;
+  height: 2px;
+  background-color: red;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}

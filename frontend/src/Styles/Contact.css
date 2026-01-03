@@ -1,0 +1,69 @@
+
+
+.contact-title {
+  color: #0b2545;
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size:50px;
+}
+
+.contact-text {
+  color: #444;
+  font-size: 1.3rem;
+}
+
+.contact-small {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.contact-form {
+  margin-top: 30px;
+  background-color: #1b2a4f; /* bleu foncé proche du header/footer */
+  padding: 30px;
+  border-radius: 10px;
+  border: 2px solid #ff3b3f; /* bordure rouge pour ressortir */
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.contact-form .form-control {
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-form textarea {
+  resize: none; /* pas de redimensionnement */
+}
+
+.btn-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.btn-contact {
+  background-color: #ff3b3f; /* rouge vif */
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-contact:hover {
+  background-color: #d23134; /* rouge plus foncé au hover */
+  transform: translateY(-2px);
+}
+
+.contact-success {
+  margin-top: 15px;
+  text-align: center;
+  color: #00ff7f; /* vert clair pour message envoyé */
+  font-weight: bold;
+}
