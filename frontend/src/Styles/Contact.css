@@ -20,10 +20,10 @@
 
 .contact-form {
   margin-top: 30px;
-  background-color: #1b2a4f; /* bleu foncé proche du header/footer */
+  background-color: #1b2a4f; 
   padding: 30px;
   border-radius: 10px;
-  border: 2px solid #ff3b3f; /* bordure rouge pour ressortir */
+  border: 2px solid #ff3b3f; 
   box-shadow: 0 5px 15px rgba(0,0,0,0.2);
 }
 
@@ -37,7 +37,7 @@
 }
 
 .contact-form textarea {
-  resize: none; /* pas de redimensionnement */
+  resize: none; 
 }
 
 .btn-wrapper {
@@ -46,7 +46,7 @@
 }
 
 .btn-contact {
-  background-color: #ff3b3f; /* rouge vif */
+  background-color: #ff3b3f;
   color: #fff;
   border: none;
   padding: 12px 25px;
@@ -57,13 +57,13 @@
 }
 
 .btn-contact:hover {
-  background-color: #d23134; /* rouge plus foncé au hover */
+  background-color: #d23134; 
   transform: translateY(-2px);
 }
 
 .contact-success {
   margin-top: 15px;
   text-align: center;
-  color: #00ff7f; /* vert clair pour message envoyé */
+  color: #00ff7f; 
   font-weight: bold;
 }
