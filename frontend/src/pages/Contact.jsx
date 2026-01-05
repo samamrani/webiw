@@ -5,7 +5,7 @@ import sam from "../Images/logo1.png";
 
 function Contact() {
  const [formData, setFormData] = useState({
-  title: "Nouveau message",
+  title: "",
   name: "",
   email: "",
   message: "",
