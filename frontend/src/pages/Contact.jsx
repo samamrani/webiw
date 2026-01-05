@@ -5,7 +5,7 @@ import sam from "../Images/logo1.png";
 
 function Contact() {
  const [formData, setFormData] = useState({
-  title: "Nouveau message depuis le portfolio",
+  title: "Nouveau message",
   name: "",
   email: "",
   message: "",
@@ -22,7 +22,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs.send(
-      "service_xmazn8q",    
+      "service_uvk0dnn",    
       "__ejs-test-mail-service__",     
       formData,              
       "g9mqvCOtiq6-itsF4"         
