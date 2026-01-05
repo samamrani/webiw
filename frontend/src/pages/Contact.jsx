@@ -4,11 +4,13 @@ import "../Styles/Contact.css";
 import sam from "../Images/logo1.png";
 
 function Contact() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
+ const [formData, setFormData] = useState({
+  title: "Nouveau message depuis le portfolio",
+  name: "",
+  email: "",
+  message: "",
+});
+
   const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
@@ -20,14 +22,14 @@ function Contact() {
     e.preventDefault();
 
     emailjs.send(
-      "service_xmazn8q",    
+      "service_k1enmbc",    
       "__ejs-test-mail-service__",     
       formData,              
       "g9mqvCOtiq6-itsF4"         
     ).then(
       () => {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" });
+        setFormData({title: "", name: "", email: "", message: "" });
         alert("Message envoyé avec succès !");
       },
       (error) => {
@@ -53,6 +55,17 @@ function Contact() {
 
           <div className="col-md-7">
             <form onSubmit={handleSubmit} className="contact-form">
+
+               <input
+                type="text"
+                name="title"
+                placeholder="Title"
+                className="form-control"
+                value={formData.title}
+                onChange={handleChange}
+                required
+              />
+              
               <input
                 type="text"
                 name="name"
