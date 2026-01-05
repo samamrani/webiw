@@ -22,7 +22,7 @@ function Contact() {
     e.preventDefault();
 
     emailjs.send(
-      "service_k1enmbc",    
+      "service_xmazn8q",    
       "__ejs-test-mail-service__",     
       formData,              
       "g9mqvCOtiq6-itsF4"         
