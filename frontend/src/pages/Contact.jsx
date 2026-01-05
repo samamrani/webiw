@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import "../Styles/Contact.css";
 import sam from "../Images/logo1.png";
 
@@ -8,45 +9,32 @@ function Contact() {
     email: "",
     message: "",
   });
-
   const [submitted, setSubmitted] = useState(false);
 
-  // Met à jour le state à chaque changement d'input
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
+    setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch(
-        "http://localhost/projets/portfolio/backend/contact.php",
-        {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(formData),
-        }
-      );
-
-      const result = await response.json();
-      console.log("Réponse du serveur :", result);
-
-      if (response.ok || result.msg) {
+    emailjs.send(
+      "service_xmazn8q",    
+      "__ejs-test-mail-service__",     
+      formData,              
+      "g9mqvCOtiq6-itsF4"         
+    ).then(
+      () => {
         setSubmitted(true);
-        setFormData({ name: "", email: "", message: "" }); // reset du formulaire
-        alert(result.msg); // message de succès du PHP
-      } else {
-        alert("Erreur serveur !");
+        setFormData({ name: "", email: "", message: "" });
+        alert("Message envoyé avec succès !");
+      },
+      (error) => {
+        console.error(error);
+        alert("Erreur serveur ! Vérifie EmailJS ou les infos du service.");
       }
-    } catch (error) {
-      console.error("Erreur fetch :", error);
-      alert("Erreur serveur !");
-    }
+    );
   };
 
   return (
@@ -92,7 +80,6 @@ function Contact() {
                 onChange={handleChange}
                 required
               />
-
               <div className="btn-wrapper">
                 <button className="btn-contact">Envoyer</button>
               </div>
